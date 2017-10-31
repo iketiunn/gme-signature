@@ -3,13 +3,13 @@ const crypto = require('crypto')
 const qs = require('querystring')
 
 function decodeB64UrlSafe (v) {
-  return Buffer.from(v.replace(/-/, '+').replace(/_/, '/'), 'base64')
+  return Buffer.from(v.replace(/-/g, '+').replace(/_/g, '/'), 'base64')
 }
 
 function encodeB64UrlSafe (v) {
   return Buffer.from(v)
     .toString('base64')
-    .replace(/\+/, '-')
+    .replace(/\+/g, '-')
     .replace(/\//g, '_')
 }
 
