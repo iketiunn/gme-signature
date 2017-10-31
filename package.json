@@ -1,5 +1,5 @@
 {
-  "name": "google-api-clientid-signature",
+  "name": "gme-signature",
   "version": "0.0.1",
   "description": "Generate sign url by clientID and private key.",
   "main": "index.js",
