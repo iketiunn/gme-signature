@@ -24,11 +24,11 @@ function signUrl (urlToSign, privateKey, clientID) {
   if (privateKey === undefined) throw new Error('Miss privateKey!')
   const { protocol, hostname, pathname, query } = url.parse(urlToSign)
   const q = qs.parse(query)
-  if (clientID) q.client = clientID
+  if (clientID !== undefined) q.client = clientID
   if (q.client === undefined) throw new Error('Miss clientID!')
 
   const decodedKey = decodeB64UrlSafe(privateKey)
-  const portionToSign = pathname + '?' + qs.stringify(q).replace(/%20/g, '+')
+  const portionToSign = pathname + '?' + qs.stringify(q).replace(/%20/g, '+').replace(/%2C/g, ',')
   const signature = crypto.createHmac('sha1', decodedKey)
     .update(portionToSign)
     .digest()
