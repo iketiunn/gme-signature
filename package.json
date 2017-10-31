@@ -1,0 +1,16 @@
+{
+  "name": "google-api-clientid-signature",
+  "version": "0.0.1",
+  "description": "Generate sign url by clientID and private key.",
+  "main": "index.js",
+  "scripts": {
+    "test": "tap test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "tap": "^10.7.2"
+  },
+  "dependencies": {}
+}
