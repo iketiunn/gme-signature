@@ -12,5 +12,9 @@
   "devDependencies": {
     "tap": "^10.7.2"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/0w0/gme-signature.git"
+  }
 }
