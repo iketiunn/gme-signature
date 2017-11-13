@@ -1,6 +1,6 @@
 {
   "name": "gme-signature",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Generate sign url by clientID and private key.",
   "main": "index.js",
   "scripts": {
