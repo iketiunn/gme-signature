@@ -1,12 +1,18 @@
 {
   "name": "gme-signature",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Generate sign url by clientID and private key.",
   "main": "index.js",
   "scripts": {
     "test": "tap test"
   },
-  "keywords": ["google", "maps", "apis","premium","signature"],
+  "keywords": [
+    "google",
+    "maps",
+    "apis",
+    "premium",
+    "signature"
+  ],
   "author": "",
   "license": "MIT",
   "devDependencies": {
