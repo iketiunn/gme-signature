@@ -26,7 +26,7 @@ test('Test with clientID as paramter', t => {
   )
 })
 
-test('Deraction api', t => {
+test('Directions api', t => {
   t.plan(1)
   const url = 'https://maps.googleapis.com/maps/api/directions/json?origin=25.0626333,121.515451&destination=25.064742,121.516717&client=clientID'
   const signedUrl = genSignedUrl(url, privateKey)

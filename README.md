@@ -17,7 +17,7 @@ const url = 'https://maps.googleapis.com/maps/api/geocode/json?address=New+York'
 const signed= sign(url, privateKey, clientId)
 console.log(signed) // 'https://maps.googleapis.com/maps/api/geocode/json?address=New+York&client=clientID&signature=chaRF2hTJKOScPr-RQCEhZbSzIE='
 
-/** Example with dereaction api */
+/** Example with directions api */
 const sign = require('gme-signature')
 const privateKey = 'vNIXE0xscrmjlyV-12Nj_BvUPaw=' // Example from the link
 const url = 'https://maps.googleapis.com/maps/api/directions/json?origin=25.0626333,121.515451&destination=25.064742,121.516717&client=clientID'
